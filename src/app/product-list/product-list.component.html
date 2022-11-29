@@ -9,29 +9,28 @@
       <th scope="col">Imagen</th>
 			<th scope="col">Nombre</th>
 			<th scope="col">Descripción</th>
-			<th scope="col">Color</th>
-			<th scope="col">Tamaño</th>
 			<th scope="col">Precio</th>
+      <th scope="col">URL</th>
 			<th scope="col">Stock</th>
-			<th scope="col">Categoría</th>
-			<th scope="col">Tipo</th>
 		</tr>
 	</thead>
 	<tbody>
-		foreach from=$products item=$product
-			<tr>
-				<th scope="row">$product->name</th>
-				<td>$product->description</td>
-				<td>$product->color</td>
-				<td>$product->size</td>
-				<td>$product->price</td>
-				<td>$product->stock</td>
-				<td>$product->category_name</td>
-				<td>$product->type_name</td>
-				<td><img class="img-fluid" width="200" src="{$product->image}" alt=""></td>
+			<tr *ngFor="let product of products">
+        <td><img class="img-thumbnail img-fluid" width="300" [src]="product.image" alt=""></td>
+				<th scope="row">{{product.name}}</th>
+				<td>{{product.description}}</td>
+				<td>{{product.price | currency}}</td>
+        <td>{{product.url}}</td>
+        <td><span class="badge text-bg-warning" *ngIf="product.stock==0"> SIN STOCK </span></td>
+        <td>
+          <app-input-integer [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock" (maxReached)="maxReached($event)"></app-input-integer>
+          Cantidad: {{product.quantity}}
+        </td>
+        <td>
+          <button class="btn btn-primary" (click)="addToCart(product)">Comprar</button>
+        </td>
 				<td><a class="btn btn-secondary" href="tienda/product/{$product->id_product}/{$product->name}"> VER EL PRODUCTO </a></td>
 			</tr>
-		/foreach
 	</tbody>
 </table>
 

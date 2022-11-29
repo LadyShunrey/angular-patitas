@@ -11,6 +11,10 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +24,14 @@ import { HomeComponent } from './home/home.component';
     AboutComponent,
     ProductListComponent,
     CartComponent,
-    HomeComponent
+    HomeComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

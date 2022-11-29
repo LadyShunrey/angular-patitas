@@ -1,1 +1,245 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #EDD6C4;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+// [
+//  {
+//   "id": 1,
+//   "name": "Código 555312",
+//   "description": "El código que dijo Javi que es para tener 10 puntos extra",
+//   "price": 999999,
+//   "stock": 1,
+//   "image": "assets/img/products/A.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 2,
+//   "name": "Bandana NO AL MALTRATO ANIMAL",
+//   "description": " ",
+//   "price": 500,
+//   "stock": 10,
+//   "image": "assets/img/products/bandana-fucsia.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 3,
+//   "name": "Cartuchera con patitas",
+//   "description": " ",
+//   "price": 600,
+//   "stock": 10,
+//   "image": "assets/img/products/cartuchera.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 4,
+//   "name": "Llavero huella casita",
+//   "description": " ",
+//   "price": 300,
+//   "stock": 0,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 5,
+//   "name": "Pizarra con imán",
+//   "description": "Incluye un fibrón borrable!",
+//   "price": 850,
+//   "stock": 60,
+//   "image": "assets/img/products/pizarra.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 6,
+//   "name": "Últimos calendarios del 2022!",
+//   "description": " ",
+//   "price": 300,
+//   "stock": 5,
+//   "image": "assets/img/products/calendario.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 7,
+//   "name": "Cuaderno rayado",
+//   "description": " ",
+//   "price": 300,
+//   "stock": 10,
+//   "image": "assets/img/products/cuaderno.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 8,
+//   "name": "Lápiz con grabado láser",
+//   "description": " ",
+//   "price": 200,
+//   "stock": 10,
+//   "image": "assets/img/products/lapices.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 9,
+//   "name": "Lapicera con grabado láser",
+//   "description": " ",
+//   "price": 300,
+//   "stock": 0,
+//   "image": "assets/img/products/lapicera.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 10,
+//   "name": "Neceser",
+//   "description": " ",
+//   "price": 800,
+//   "stock": 10,
+//   "image": "assets/img/products/neceser.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 11,
+//   "name": "Mini morral",
+//   "description": " ",
+//   "price": 2000,
+//   "stock": 10,
+//   "image": "assets/img/products/minimorral.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 12,
+//   "name": "Taza",
+//   "description": "Taza de bordes rectos con dibujos de los malandras",
+//   "price": 1500,
+//   "stock": 10,
+//   "image": "assets/img/products/taza-recta.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 13,
+//   "name": "Llavero amor peludo",
+//   "description": " ",
+//   "price": 450,
+//   "stock": 10,
+//   "image": "assets/img/products/llaveropeludo.jpg",
+//   "url": "-"
+//  },
+// {
+//   "id": 14,
+//   "name": "Tazón de campo",
+//   "description": "Tazón grande con dibujos de los malandras",
+//   "price": 1400,
+//   "stock": 0,
+//   "image": "assets/img/products/tazon-campo.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 15,
+//   "name": "Remera P4P (Proyecto 4 Patas)",
+//   "description": "Remera con el logo",
+//   "price": 3500,
+//   "stock": 20,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 16,
+//   "name": "Remera Aloe",
+//   "description": "Remera con el perrito Aloe",
+//   "price": 3500,
+//   "stock": 10,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 17,
+//   "name": "Remera Voluntad",
+//   "description": "Remera de voluntarios",
+//   "price": 3500,
+//   "stock": 10,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 18,
+//   "name": "Remera la felicidad incluye un perro",
+//   "description": "Remera con frase",
+//   "price": 3500,
+//   "stock": 0,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 19,
+//   "name": "Buzo Aloe",
+//   "description": "Buzo con dibujo de un perrito",
+//   "price": 8000,
+//   "stock": 10,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 20,
+//   "name": "Buzo Voluntad",
+//   "description": "Buzo de voluntarios con logo",
+//   "price": 8000,
+//   "stock": 0,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 21,
+//   "name": "Billetera ecológica perro",
+//   "description": "Billetera estampada con perritos",
+//   "price": 1300,
+//   "stock": 50,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 22,
+//   "name": "Billetera ecológica gato",
+//   "description": "Billetera estampada con gatitos",
+//   "price": 1300,
+//   "stock": 0,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 23,
+//   "name": "Mate P4P (Proyecto 4 Patas)",
+//   "description": "Mate de ceramica",
+//   "price": 1000,
+//   "stock": 0,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 24,
+//   "name": "Mate de madera DANOS UNA PATA",
+//   "description": "Mate de madera",
+//   "price": 1000,
+//   "stock": 0,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 25,
+//   "name": "Mate voluntarios P4P",
+//   "description": "Mate de ceramica",
+//   "price": 1000,
+//   "stock": 0,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  },
+//  {
+//   "id": 26,
+//   "name": "Gorra P4P",
+//   "description": "Gorra tipo trucker. Tené tu gorra de Proyecto 4 Patas!",
+//   "price": 1500,
+//   "stock": 5,
+//   "image": "assets/img/products/llavero-casita.jpg",
+//   "url": "-"
+//  }
+// ]
