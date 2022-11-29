@@ -1,0 +1,27 @@
+<h3>Listado de perritos disponibles por rescatistas</h3>
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th>Imagen</th>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Sexo</th>
+      <th>Tamaño</th>
+      <th>Castrado</th>
+      <th>Rescatista</th>
+      <th>Link real de contacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dog of dogs">
+      <td><img class="img-thumbnail" width="200" [src]="dog.image" [alt]="dog.name"></td>
+      <td>{{dog.name}}</td>
+      <td>{{dog.age}}</td>
+      <td>{{dog.gender}}</td>
+      <td>{{dog.size}}</td>
+      <td>{{dog.castrated}}</td>
+      <td>{{dog.rescuer}}</td>
+      <td><a [href]="dog.link" target="_blank">CONTACTO</a></td>
+    </tr>
+  </tbody>
+</table>

@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { FormsModule } from '@angular/forms';
+import { DogListComponent } from './dog-list/dog-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     ProductListComponent,
     CartComponent,
     HomeComponent,
-    InputIntegerComponent
+    InputIntegerComponent,
+    DogListComponent
   ],
   imports: [
     BrowserModule,

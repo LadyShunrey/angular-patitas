@@ -1,4 +1,5 @@
-<p>product-list works!</p>
+<p>Todos los productos publicados acá están realmente en venta en la página de cada rescatista!</p>
+<p>Los precios están actualizados!</p>
 
 <a class="btn btn-primary" > Ver todas las categorías </a>
 <a class="btn btn-primary" > Ver todos los tipos de producto disponible </a>
@@ -20,7 +21,7 @@
 				<th scope="row">{{product.name}}</th>
 				<td>{{product.description}}</td>
 				<td>{{product.price | currency}}</td>
-        <td>{{product.url}}</td>
+        <td><a [href]="product.url" target="_blank">LINK PARA COMPRAR DE VERDAD</a></td>
         <td><span class="badge text-bg-warning" *ngIf="product.stock==0"> SIN STOCK </span></td>
         <td>
           <app-input-integer [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock" (maxReached)="maxReached($event)"></app-input-integer>
