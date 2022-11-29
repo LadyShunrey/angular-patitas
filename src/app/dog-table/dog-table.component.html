@@ -1,0 +1,6 @@
+<h3>Lista de perritos disponibles por los usuarios</h3>
+<ul>
+  <li *ngFor="let dog of (dogList$ | async)">
+    {{dog.name}}: {{dog.age}}
+  </li>
+</ul>

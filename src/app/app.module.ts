@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { FormsModule } from '@angular/forms';
 import { DogListComponent } from './dog-list/dog-list.component';
+import { DogFormComponent } from './dog-form/dog-form.component';
+import { DogTableComponent } from './dog-table/dog-table.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { DogListComponent } from './dog-list/dog-list.component';
     CartComponent,
     HomeComponent,
     InputIntegerComponent,
-    DogListComponent
+    DogListComponent,
+    DogFormComponent,
+    DogTableComponent
   ],
   imports: [
     BrowserModule,
