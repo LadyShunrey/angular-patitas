@@ -19,6 +19,9 @@ export class ProductCartService {
       this._cartList.push({... product});
     } else{
       item.quantity += product.quantity;
+      if(item.quantity>product.stock){
+        item.quantity -= product.quantity;
+      }
     }
     console.log(this._cartList);
     this.cartList.next(this._cartList);
