@@ -1,6 +1,12 @@
 <h3>Carrito de compras</h3>
 <ul>
   <li *ngFor="let product of (cartList$ | async)">
-    {{product.name}}: {{product.quantity}}
+    <p> PRODUCTO: {{product.name}}</p>
+    <p>CANTIDAD: {{product.quantity}}</p>
+    <p>PRECIO POR UNIDAD: {{product.price}}</p>
+    <p
+       >
+        PRECIO: {{ product.totalPrice }}</p>
   </li>
 </ul>
+<p> TOTAL: {{totalPrice$ | async}} </p>

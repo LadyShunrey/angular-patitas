@@ -9,10 +9,10 @@ export class InputIntegerComponent {
   constructor(){}
 
   @Input()
-  quantity!: number;
+  quantity: number = 0;
 
   @Input()
-  max!: number;
+  max: number = 0;
 
   @Output()
   quantityChange: EventEmitter<number> = new EventEmitter<number>();
@@ -43,7 +43,7 @@ export class InputIntegerComponent {
 
   changeQuantity(event: any): void {
     console.log(event);
-    this.quantityChange.emit(this.quantity);
+    this.quantityChange.emit(Number(this.quantity));
   }
 
 }

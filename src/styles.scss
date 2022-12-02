@@ -17,12 +17,12 @@ nav {
   font-weight: bold;
 }
 
-button {
-  color: #EDD6C4;
-    background-color: #7B2D31;
-    border: groove #7B2D31 ;
-    border-radius: 4px;
-    padding: 2%;
+.btn-danger.rojo {
+  // color: #EDD6C4;
+  background-color: #7B2D31;
+  border-color: #7B2D31 ;
+  // border-radius: 4px;
+  // padding: 2%;
 }
 
 .boton:hover {

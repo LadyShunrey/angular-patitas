@@ -3,16 +3,16 @@
 
 
 
-<table class="table table-striped">
+<table class="table table-striped width">
 	<thead>
 		<tr>
       <th scope="col">Imagen</th>
 			<th scope="col">Nombre</th>
 			<th scope="col">Descripción</th>
 			<th scope="col">Precio</th>
-      <th scope="col">URLLLLLLLLLL</th>
+      <th scope="col">URL</th>
 			<th scope="col">Stock</th>
-      <th scope="col">Cantidaaad</th>
+      <th scope="col">Cantidad</th>
       <th scope="col"></th>
       <th scope="col"></th>
 		</tr>
@@ -25,11 +25,11 @@
 				<td>{{product.price | currency}}</td>
         <td><a [href]="product.url" target="_blank">LINK PARA COMPRAR DE VERDAD</a></td>
         <td><span class="badge text-bg-warning" *ngIf="product.stock==0"> SIN STOCK </span></td>
-        <td>
+        <td class="cantidad">
           <app-input-integer [(quantity)]="product.quantity" [max]="product.stock" *ngIf="product.stock" (maxReached)="maxReached($event)"></app-input-integer>
         </td>
         <td>
-          <button class="btn btn-danger" (click)="addToCart(product)">Comprar</button>
+          <button class="btn btn-danger rojo" (click)="addToCart(product)">Comprar</button>
         </td>
 				<td><a class="btn btn-danger" href="tienda/product/{$product->id_product}/{$product->name}"> VER EL PRODUCTO </a></td>
 			</tr>
